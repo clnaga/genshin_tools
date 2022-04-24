@@ -1,0 +1,112 @@
+{
+    "1": {
+        "1": {
+            "reaction_type": 0,
+            "reaction_base_multipiler": 1
+        },
+        "2": {
+            "reaction_type": 1,
+            "reaction_base_multipiler": 1.5
+        },
+        "3": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 3
+        },
+        "4": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1
+        },
+        "5": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        }
+    },
+    "2": {
+        "1": {
+            "reaction_type": 1,
+            "reaction_base_multipiler": 2
+        },
+        "2": {
+            "reaction_type": 0,
+            "reaction_base_multipiler": 1
+        },
+        "3": {
+            "reaction_type": 1,
+            "reaction_base_multipiler": 1.5
+        },
+        "4": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 4
+        },
+        "5": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        }
+    },
+    "3": {
+        "1": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 3
+        },
+        "2": {
+            "reaction_type": 1,
+            "reaction_base_multipiler": 2
+        },
+        "3": {
+            "reaction_type": 0,
+            "reaction_base_multipiler": 1
+        },
+        "4": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 2.4
+        },
+        "5": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        }
+    },
+    "4": {
+        "1": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1
+        },
+        "2": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 4
+        },
+        "3": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 2.4
+        },
+        "4": {
+            "reaction_type": 0,
+            "reaction_base_multipiler": 1
+        },
+        "5": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        }
+    },
+    "5": {
+        "1": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        },
+        "2": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        },
+        "3": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        },
+        "4": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        },
+        "5": {
+            "reaction_type": 2,
+            "reaction_base_multipiler": 1.2
+        }
+    }
+}
