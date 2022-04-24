@@ -57,6 +57,10 @@
 '''
 
 '''
+抗性表参考: https://bbs.mihoyo.com/ys/article/20098257
+'''
+
+'''
 attack [攻击区]
 paras: 
     attack_character: 人物攻击力
@@ -152,16 +156,17 @@ def get_defense(
     return (level_character + 100) / ((level_character + 100) + (1 - defense_penetrate) * (1 - defense_reduce + defense_monster_increase) * (level_monster + 100))
 
 '''
-resistance [抗性区] [待补充，此处默认抗性为 10%]
+resistance [抗性区]
 paras:
+    resistance_value: 怪物抗性, 参考 https://bbs.mihoyo.com/ys/article/20098257, 默认抗性 10%
+todo:
+# 读取 resistance.json 获取怪物对应的抗性数值
     type_monster: 需要计算的怪物类型
     type_resistance: 需要计算的抗性类型
 '''
 def get_resistance(
-    type_monster=None, 
-    type_resistance=None
-):
     resistance_value = 0.1
+):
     if resistance_value > 0.75:
         return 1 / (1 + 4 * resistance_value)
     elif resistance_value >= 0:
@@ -181,6 +186,9 @@ notes:
     无反应: 0; 增幅反应: 1;
     元素类型代码对应:
     冰: 1; 火: 2; 水: 3
+todo:
+# 读取 reaction_list.json 获取对应元素反应增幅
+# 完善剧变反应测试
 '''
 def get_elemental_reaction(
     reaction_active_element,
@@ -238,6 +246,7 @@ character_critical_damage = 0.5 + 0.384 # 人物基础爆伤
 character_skill_multipiler = 6.22 # 技能倍率，可以从天赋看
 # 怪物属性
 monster_level = 88 # 被攻击怪物等级
+monster_resistance = 0.1 # 怪物对应伤害抗性，可查表得知
 # 羁绊属性
 fetter_attack_percentage = 0 # 羁绊攻击百分比提升
 # 武器属性
